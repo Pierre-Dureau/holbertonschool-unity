@@ -12,12 +12,22 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Update() {
+        if (transform.position.y < -10)
+            transform.position = new Vector3(0f, 5f, 0f);
+    }
+
 
     void FixedUpdate()
     {
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
         Vector3 moveDir = new(inputVector.x, 0f, inputVector.y);
-        transform.position += moveSpeed * Time.deltaTime * moveDir;            
+        if (moveDir !=  Vector3.zero) {
+            // Change la direction du vecteur vers la où regarde le player
+            moveDir = transform.TransformDirection(moveDir);
+
+            transform.position += moveSpeed * Time.deltaTime * moveDir;
+        }
     }
 
     public void Jump()
