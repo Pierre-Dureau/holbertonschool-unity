@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour {
 
     private Vector3 cameraStartPosition;
 
-    public bool IsInverted = false;
+    public bool IsInverted;
 
     void Start() {
         cameraStartPosition = transform.localPosition;
