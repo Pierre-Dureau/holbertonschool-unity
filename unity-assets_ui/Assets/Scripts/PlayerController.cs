@@ -41,5 +41,5 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics.Raycast(transform.position, -transform.up, 1.25f);
-    }
+    }    
 }

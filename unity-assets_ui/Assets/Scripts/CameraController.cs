@@ -6,8 +6,12 @@ public class CameraController : MonoBehaviour {
     private readonly float rotationSpeed = 3.0f;
     private float currentRotationX = 0;
     private float currentRotationY = 0;
+    private float horizontalInput;
+    private float verticalInput;
 
     private Vector3 cameraStartPosition;
+
+    public bool IsInverted = false;
 
     void Start() {
         cameraStartPosition = transform.localPosition;
@@ -17,8 +21,15 @@ public class CameraController : MonoBehaviour {
 
     void LateUpdate() {
         // Obtiens l'entrée de la souris pour effectuer une rotation de la caméra
-        float horizontalInput = Input.GetAxis("Mouse X");
-        float verticalInput = Input.GetAxis("Mouse Y");
+        if (!IsInverted)
+        {
+            horizontalInput = Input.GetAxis("Mouse X");
+            verticalInput = Input.GetAxis("Mouse Y");
+        } else
+        {
+            horizontalInput = -Input.GetAxis("Mouse X");
+            verticalInput = -Input.GetAxis("Mouse Y");
+        }
 
         currentRotationX -= verticalInput * rotationSpeed;
         currentRotationX = Mathf.Clamp(currentRotationX, -10f, 60f); // Hauteur min et max de la caméra

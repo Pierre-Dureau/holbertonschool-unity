@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameInput : MonoBehaviour
 {
     private PlayerInputActions playerInputActions;
-    public GameObject player;
+    private GameObject player;
 
     private void Awake()
     {
@@ -22,5 +22,10 @@ public class GameInput : MonoBehaviour
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         player.GetComponent<PlayerController>().Jump();
+    }
+
+    private void OnEnable()
+    {
+        player = GameObject.FindWithTag("Player");
     }
 }
