@@ -11,17 +11,19 @@ public class CameraController : MonoBehaviour {
 
     private Vector3 cameraStartPosition;
 
-    public bool IsInverted;
+    public bool isInverted;
 
     void Start() {
         cameraStartPosition = transform.localPosition;
         cameraStartPosition.y -= 1.25f; // La taille du joueur
         transform.rotation = transform.localRotation;
+
+        isInverted = PlayerPrefs.GetInt("yAxis") == 1;
     }
 
     void LateUpdate() {
         // Obtiens l'entrée de la souris pour effectuer une rotation de la caméra
-        if (!IsInverted)
+        if (!isInverted)
         {
             horizontalInput = Input.GetAxis("Mouse X");
             verticalInput = Input.GetAxis("Mouse Y");
