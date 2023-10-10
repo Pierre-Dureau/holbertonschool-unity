@@ -2,12 +2,17 @@ using UnityEngine;
 
 public class WinTrigger : MonoBehaviour
 {
+    [SerializeField] private Canvas winCanvas;
+    [SerializeField] private Canvas timerCanvas;
+    [SerializeField] private CameraController controller;
+
     private void OnTriggerEnter(Collider other) {
         if (other.name == "Player")
         {
-            other.GetComponent<Timer>().enabled = false;
-            other.GetComponent<Timer>().TimerText.fontSize = 60;
-            other.GetComponent<Timer>().TimerText.color = Color.green;
+            timerCanvas.gameObject.SetActive(false);
+            winCanvas.gameObject.SetActive(true);
+            controller.enabled = false;
+            other.GetComponent<Timer>().Win();
         }
     }
 }

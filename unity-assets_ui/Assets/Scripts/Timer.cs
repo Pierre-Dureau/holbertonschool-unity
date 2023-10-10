@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public Text TimerText;
+    public TextMeshProUGUI TimerText;
     private float currentTime = 0f;
+    [SerializeField] private TextMeshProUGUI winText;
 
     private void Update()
     {
@@ -15,5 +17,11 @@ public class Timer : MonoBehaviour
         int milliseconds = Mathf.FloorToInt((currentTime * 100) % 100);
         
         TimerText.text = string.Format("{0}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+    }
+
+    public void Win()
+    {
+        winText.text = TimerText.text;
+        Time.timeScale = 0;
     }
 }

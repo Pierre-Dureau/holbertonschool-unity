@@ -121,6 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e05afec48b7ee4790887a1740fdf03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winCanvas: {fileID: 0}
+  timerCanvas: {fileID: 0}
+  controller: {fileID: 0}
 --- !u!1001 &5555491747518909191
 PrefabInstance:
   m_ObjectHideFlags: 0
