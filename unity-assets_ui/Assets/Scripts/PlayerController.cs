@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 7f;
-    [SerializeField] private float jumpPower = 5f;
+    private readonly float moveSpeed = 8f;
+    private readonly float jumpPower = 9f;
     [SerializeField] private GameInput gameInput;
     private Rigidbody rb;
 
@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
             transform.position += moveSpeed * Time.deltaTime * moveDir;
         }
+
+        rb.AddForce(15f * rb.mass * Vector3.down);
     }
 
     public void Jump()

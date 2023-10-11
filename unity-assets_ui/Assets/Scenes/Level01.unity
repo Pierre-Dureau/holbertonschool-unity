@@ -7892,15 +7892,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.045454
+      value: 9.358363
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
       propertyPath: m_LocalScale.y
-      value: 6.045454
+      value: 7.425487
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
       propertyPath: m_LocalScale.z
-      value: 6.045454
+      value: 9.358363
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7908,7 +7908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.26
+      value: 9.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8845,6 +8845,10 @@ PrefabInstance:
       propertyPath: gameInput
       value: 
       objectReference: {fileID: 841291519}
+    - target: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: jumpPower
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2935130535386288902, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: winText
       value: 
@@ -8855,6 +8859,10 @@ PrefabInstance:
       objectReference: {fileID: 3882107452587298102}
     - target: {fileID: 2935130535386288902, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911640429551222230, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6992595089263053908, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}

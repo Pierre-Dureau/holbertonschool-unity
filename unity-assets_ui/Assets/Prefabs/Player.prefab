@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  jumpPower: 7
+  jumpPower: 50
   gameInput: {fileID: 0}
 --- !u!114 &2935130535386288902
 MonoBehaviour:
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerText: {fileID: 0}
+  winText: {fileID: 0}
 --- !u!114 &590322386296482536
 MonoBehaviour:
   m_ObjectHideFlags: 0
