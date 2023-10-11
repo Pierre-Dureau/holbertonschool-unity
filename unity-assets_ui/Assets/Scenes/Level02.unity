@@ -222,15 +222,15 @@ PrefabInstance:
       objectReference: {fileID: 901286559}
     - target: {fileID: 7876032239099172165, guid: 2eedac1917700094aa6a5160cfe29a17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.11
+      value: -1.02
       objectReference: {fileID: 0}
     - target: {fileID: 7876032239099172165, guid: 2eedac1917700094aa6a5160cfe29a17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.48
+      value: 6.01
       objectReference: {fileID: 0}
     - target: {fileID: 7876032239099172165, guid: 2eedac1917700094aa6a5160cfe29a17, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.23
+      value: 25.15
       objectReference: {fileID: 0}
     - target: {fileID: 7876032239099172165, guid: 2eedac1917700094aa6a5160cfe29a17, type: 3}
       propertyPath: m_LocalRotation.w
@@ -348,15 +348,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da43a48b5d5889d459d7d2308cdb22fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02686274
+      value: -0.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da43a48b5d5889d459d7d2308cdb22fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8
+      value: -3.24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da43a48b5d5889d459d7d2308cdb22fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.962822
+      value: 23.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da43a48b5d5889d459d7d2308cdb22fe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -568,6 +568,10 @@ PrefabInstance:
       objectReference: {fileID: 1625574886}
     - target: {fileID: 2935130535386288902, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911640429551222230, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6911640429551222230, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
