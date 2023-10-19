@@ -35,14 +35,15 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
-        if (IsGrounded() && !isJumping)
-        {
-            animator.SetBool("isJumping", false);
-        }
     }
 
     private void FixedUpdate() {
         rb.velocity = new Vector2(horizontalMovement * speed, rb.velocity.y);
+
+        if (IsGrounded() && !isJumping)
+        {
+            animator.SetBool("isJumping", false);
+        }
     }
 
     private bool IsGrounded() {
