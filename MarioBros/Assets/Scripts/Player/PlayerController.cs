@@ -13,11 +13,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheckLeft;
     [SerializeField] private Transform groundCheckRight;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Animator animator;
+    private Animator animator;
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update() {
@@ -45,7 +46,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private bool IsGrounded() {
-        return Physics2D.OverlapCircle(groundCheckLeft.position, 0.1f, groundLayer) || Physics2D.OverlapCircle(groundCheckRight.position, 0.1f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheckLeft.position, 0.01f, groundLayer) || Physics2D.OverlapCircle(groundCheckRight.position, 0.01f, groundLayer);
     }
 
     private void Flip(float _velocity) {
@@ -62,16 +63,5 @@ public class PlayerController : MonoBehaviour
         isJumping = true;
         yield return new WaitForSeconds(0.1f);
         isJumping = false;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy") && animator.GetBool("isJumping"))
-        {
-            if (Input.GetKey(KeyCode.Space))
-                rb.velocity = new Vector2(rb.velocity.x, 19f);
-            else
-                rb.velocity = new Vector2(rb.velocity.x, 8f);
-        }
     }
 }

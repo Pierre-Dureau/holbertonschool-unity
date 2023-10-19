@@ -1,21 +1,13 @@
 using UnityEngine;
 
-public class Goomba : MonoBehaviour
+public class GoombaController : MonoBehaviour
 {
     private bool goToLeft = false;
-
     private Rigidbody2D rb;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void Update()
-    {
-        if (rb.velocity.x == 0f) {
-            goToLeft = !goToLeft;
-        }
+        rb = transform.parent.GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
@@ -24,5 +16,11 @@ public class Goomba : MonoBehaviour
             rb.velocity = new Vector2(3f, rb.velocity.y);
         else
             rb.velocity = new Vector2(-3f, rb.velocity.y);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Player"))
+            Debug.Log("death");
+        goToLeft = !goToLeft;
     }
 }
