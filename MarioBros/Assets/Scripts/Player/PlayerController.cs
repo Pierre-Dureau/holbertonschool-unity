@@ -15,6 +15,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     private Animator animator;
 
+    public static PlayerController instance;
+
+    private void Awake() {
+        if (instance == null)
+            instance = this;
+    }
+
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -26,13 +33,7 @@ public class PlayerController : MonoBehaviour
 
         Flip(rb.velocity.x);
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded()) {
-            StartCoroutine(Jump());
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        }
-        if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f) {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
+        Jump();
 
         animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
     }
@@ -58,7 +59,27 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator Jump()
+    private void Jump() 
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded()) {
+            StartCoroutine(JumpAnim());
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+        if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f) {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+    }
+
+    public void Bounce()
+    {
+        StartCoroutine(JumpAnim());
+        if (Input.GetKey(KeyCode.Space))
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        else
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce / 1.5f);
+    }
+
+    IEnumerator JumpAnim()
     {
         animator.SetBool("isJumping", true);
         isJumping = true;

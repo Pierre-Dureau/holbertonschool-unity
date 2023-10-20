@@ -6,12 +6,12 @@ public class Inventory : MonoBehaviour
     private int coinsCount = 0;
     [SerializeField] private TextMeshProUGUI coinsCountText;
 
-    public static Inventory Instance;
+    public static Inventory instance;
 
     private void Awake()
     {
-        if (Instance == null)
-            Instance = this;
+        if (instance == null)
+            instance = this;
     }
 
     public void AddCoins()
