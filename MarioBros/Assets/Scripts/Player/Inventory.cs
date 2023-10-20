@@ -17,6 +17,6 @@ public class Inventory : MonoBehaviour
     public void AddCoins()
     {
         coinsCount++;
-        coinsCountText.text = coinsCount.ToString();
+        coinsCountText.text = coinsCount < 10 ? $"0{coinsCount}" : coinsCount.ToString();
     }
 }

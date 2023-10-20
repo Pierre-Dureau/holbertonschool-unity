@@ -359,7 +359,6 @@ MonoBehaviour:
   objectToDestroy: {fileID: 7420478476742132922}
   controlToDestroy: {fileID: 794785002014941212}
   animator: {fileID: 9083459923692118639}
-  rb: {fileID: 0}
 --- !u!1 &7420478476742132922
 GameObject:
   m_ObjectHideFlags: 0
