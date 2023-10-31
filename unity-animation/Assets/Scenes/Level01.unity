@@ -2429,6 +2429,7 @@ GameObject:
   - component: {fileID: 539209354}
   - component: {fileID: 539209353}
   - component: {fileID: 539209352}
+  - component: {fileID: 539209356}
   m_Layer: 0
   m_Name: CutsceneCamera
   m_TagString: Untagged
@@ -2531,6 +2532,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &539209356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539209351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f82acd7bbaa9541b660c1c6f11a990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 8583735611538820807}
+  playerController: {fileID: 3844059465190504238}
+  timerCanvas: {fileID: 3882107452587298103}
+  cutScene: {fileID: 539209351}
 --- !u!1001 &551411614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4044,7 +4061,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4214612809566365071, guid: a2ab809e078fcf44b9380240bb407440, type: 3}
   m_PrefabInstance: {fileID: 8583735611538820806}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8583735611538820807}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 809ff21419329de459d20324c3089fe2, type: 3}
@@ -8963,6 +8980,10 @@ PrefabInstance:
       propertyPath: jumpPower
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2935130535386288902, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: winText
       value: 
@@ -8974,6 +8995,10 @@ PrefabInstance:
     - target: {fileID: 2935130535386288902, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3756359130696788692, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6911640429551222230, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: m_UseGravity
@@ -8988,6 +9013,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+--- !u!114 &3844059465190504238 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+  m_PrefabInstance: {fileID: 3844059465190504237}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e982bd233f05649b41814b9cc6f5b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3882107452587298101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8999,6 +9035,10 @@ PrefabInstance:
     - target: {fileID: 423267246629850534, guid: 1c31aea052aea4e43b363685af5cd1cd, type: 3}
       propertyPath: m_Name
       value: TimerCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 423267246629850534, guid: 1c31aea052aea4e43b363685af5cd1cd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4071188464772902338, guid: 1c31aea052aea4e43b363685af5cd1cd, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -9104,6 +9144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3882107452587298103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 423267246629850534, guid: 1c31aea052aea4e43b363685af5cd1cd, type: 3}
+  m_PrefabInstance: {fileID: 3882107452587298101}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8057477562053897574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9238,6 +9283,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ab809e078fcf44b9380240bb407440, type: 3}
+--- !u!1 &8583735611538820807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6294192071985964457, guid: a2ab809e078fcf44b9380240bb407440, type: 3}
+  m_PrefabInstance: {fileID: 8583735611538820806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9041698300651798948
 PrefabInstance:
   m_ObjectHideFlags: 0
