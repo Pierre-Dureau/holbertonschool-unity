@@ -51,6 +51,6 @@ public class CameraController : MonoBehaviour {
         transform.LookAt(player);
 
         // Rotation du joueur pour faire face à la direction de la caméra
-        player.rotation = Quaternion.Euler(0, currentRotationY, 0);
+        //player.rotation = Quaternion.Euler(0, currentRotationY, 0);
     }
 }

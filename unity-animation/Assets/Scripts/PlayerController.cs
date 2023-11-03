@@ -6,6 +6,10 @@ public class PlayerController : MonoBehaviour
     private readonly float jumpPower = 9f;
     [SerializeField] private GameInput gameInput;
     private Rigidbody rb;
+    [SerializeField] private Transform cam;
+    [SerializeField] private Animator animator;
+
+    float turnSmoothVelocity;
 
     private void Awake()
     {
@@ -20,14 +24,21 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
-        Vector3 moveDir = new(inputVector.x, 0f, inputVector.y);
-        if (moveDir !=  Vector3.zero) {
-            // Change la direction du vecteur vers la où regarde le player
-            moveDir = transform.TransformDirection(moveDir);
+        Vector2 inputVector = gameInput.GetMovementVector();
+        Vector3 direction = new Vector3(inputVector.x, 0f, inputVector.y).normalized;
 
-            transform.position += moveSpeed * Time.deltaTime * moveDir;
+        if (direction.magnitude >= 0.1f) {
+            animator.SetBool("isRunning", true);
+
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, 0.1f);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            transform.position += moveSpeed * Time.deltaTime * moveDir.normalized;
         }
+        else
+            animator.SetBool("isRunning", false);
 
         rb.AddForce(15f * rb.mass * Vector3.down);
     }

@@ -12,10 +12,9 @@ public class GameInput : MonoBehaviour
         playerInputActions.Player.Jump.performed += Jump_performed;
     }
 
-    public Vector2 GetMovementVectorNormalized()
+    public Vector2 GetMovementVector()
     {
         Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();
-        inputVector = inputVector.normalized;
         return inputVector;
     }
     
