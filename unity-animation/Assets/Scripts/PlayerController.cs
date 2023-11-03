@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform cam;
     [SerializeField] private Animator animator;
 
+    private bool isJumping = false;
     float turnSmoothVelocity;
 
     private void Awake()
@@ -41,18 +43,29 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isRunning", false);
 
         rb.AddForce(15f * rb.mass * Vector3.down);
+
+        if (IsGrounded() && !isJumping)
+            animator.SetBool("isJumping", false);
     }
 
     public void Jump()
     {
         if (IsGrounded())
         {
+            StartCoroutine(JumpAnim());
             rb.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
         }
+    }
+
+    IEnumerator JumpAnim() {
+        animator.SetBool("isJumping", true);
+        isJumping = true;
+        yield return new WaitForSeconds(0.1f);
+        isJumping = false;
     }
 
     private bool IsGrounded()
     {
         return Physics.Raycast(transform.position, -transform.up, 1.25f);
-    }    
+    }
 }
