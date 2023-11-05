@@ -6,7 +6,6 @@ public class CutsceneController : MonoBehaviour
     [SerializeField] private GameObject mainCamera;
     [SerializeField] private PlayerController playerController;
     [SerializeField] private GameObject timerCanvas;
-    [SerializeField] private GameObject cutScene;
 
     void Start()
     {
@@ -19,7 +18,7 @@ public class CutsceneController : MonoBehaviour
     IEnumerator GameStart()
     {
         yield return new WaitForSeconds(2.1f);
-        cutScene.SetActive(false);
+        gameObject.SetActive(false);
         mainCamera.SetActive(true);
         playerController.enabled = true;
         timerCanvas.SetActive(true);
