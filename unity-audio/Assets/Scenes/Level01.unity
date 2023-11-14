@@ -469,6 +469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 670b0c6de6e3b264d9a567c92cc7e312, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -903,6 +907,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a6912b939191b544aaff42b18fd1e3d3, type: 3}
       propertyPath: m_Name
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6912b939191b544aaff42b18fd1e3d3, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1764,6 +1772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0c752e3c9719868418b6a50567cc9de0, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2045,6 +2057,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a793c0a96593a694c8c9294f3955da5a, type: 3}
       propertyPath: m_Name
       value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a793c0a96593a694c8c9294f3955da5a, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2971,6 +2987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 844bbd2343a889c4cb6f85895873db3b, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3712,6 +3732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a793c0a96593a694c8c9294f3955da5a, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3889,6 +3913,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cdddc571bdf82c64ab65cf6f97f570be, type: 3}
       propertyPath: m_Name
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdddc571bdf82c64ab65cf6f97f570be, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4500,6 +4528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdddc571bdf82c64ab65cf6f97f570be, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4603,6 +4635,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3bc4a293956d52d4d8e76b6c2d13d16b, type: 3}
       propertyPath: m_Name
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3bc4a293956d52d4d8e76b6c2d13d16b, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5128,6 +5164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5305,6 +5345,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c963d2dadef45574da35ee84d312193f, type: 3}
       propertyPath: m_Name
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c963d2dadef45574da35ee84d312193f, type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5692,6 +5736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: da43a48b5d5889d459d7d2308cdb22fe, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5870,6 +5918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7183736d178da1b4baa9076a899d90f1, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6047,6 +6099,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a0f9cc950be02ce42bc7a2a114223e19, type: 3}
       propertyPath: m_Name
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0f9cc950be02ce42bc7a2a114223e19, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6330,6 +6386,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b0433ada4e0198742919d9119b5cfefb, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6434,6 +6494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6537,6 +6601,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
       propertyPath: m_Name
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7258,6 +7326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7456,6 +7528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0c752e3c9719868418b6a50567cc9de0, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7527,6 +7603,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cd9b89ee0f8e711409e3effbc8fb62ca, type: 3}
       propertyPath: m_Name
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd9b89ee0f8e711409e3effbc8fb62ca, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7773,6 +7853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 844bbd2343a889c4cb6f85895873db3b, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7950,6 +8034,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
       propertyPath: m_Name
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f385cc1e6ac697540afefa94408b06ac, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8517,6 +8605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b419bc28e65894c8e5d845d43165cd, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8800,7 +8892,7 @@ PrefabInstance:
     - target: {fileID: 6958269292430616024, guid: 2f279e4a526ee4e4c88f0a229d63e035, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 3844059465190504238}
+      objectReference: {fileID: 3844059465190504246}
     - target: {fileID: 9111473367409926526, guid: 2f279e4a526ee4e4c88f0a229d63e035, type: 3}
       propertyPath: m_Name
       value: CutsceneCamera
@@ -8830,7 +8922,7 @@ PrefabInstance:
     - target: {fileID: 3657193594370443198, guid: 2992564097cc9fd459d8680893331801, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 3844059465190504238}
+      objectReference: {fileID: 3844059465190504246}
     - target: {fileID: 4999223837904426639, guid: 2992564097cc9fd459d8680893331801, type: 3}
       propertyPath: m_Name
       value: TimerTrigger
@@ -8944,18 +9036,6 @@ PrefabInstance:
       propertyPath: pauseCanvas
       value: 
       objectReference: {fileID: 9041698300651798949}
-    - target: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 8583735611538820810}
-    - target: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
-      propertyPath: gameInput
-      value: 
-      objectReference: {fileID: 841291519}
-    - target: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2935130535386288902, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: winText
       value: 
@@ -8968,14 +9048,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8157689999799518224, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 8583735611538820810}
+    - target: {fileID: 8157689999799518224, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: gameInput
+      value: 
+      objectReference: {fileID: 841291519}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
---- !u!114 &3844059465190504238 stripped
+--- !u!114 &3844059465190504246 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8157689999799518224, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
   m_PrefabInstance: {fileID: 3844059465190504237}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

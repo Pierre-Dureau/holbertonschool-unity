@@ -11,8 +11,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator animator;
 
     private bool isJumping = false;
-    public bool isFalling = false;
+    public bool isDead = false;
     float turnSmoothVelocity;
+
+    public string platformTag;
 
     private void Awake()
     {
@@ -21,13 +23,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update() {
         if (transform.position.y < -10f) {
-            Fall();
+            Dead();
         }
     }
 
     void FixedUpdate()
     {
-        if (!isFalling) {
+        if (!isDead) {
             Vector2 inputVector = gameInput.GetMovementVector();
             Vector3 direction = new Vector3(inputVector.x, 0f, inputVector.y).normalized;
 
@@ -40,8 +42,11 @@ public class PlayerController : MonoBehaviour
 
                 Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 transform.position += moveSpeed * Time.deltaTime * moveDir.normalized;
-            } else
+            }
+            else {
                 animator.SetBool("isRunning", false);
+            }
+                
 
             rb.AddForce(15f * rb.mass * Vector3.down);
 
@@ -66,17 +71,26 @@ public class PlayerController : MonoBehaviour
         isJumping = false;
     }
 
-    private void Fall() {
+    private void Dead() {
         rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
         transform.position = new Vector3(0f, 15f, 0f);
         animator.SetBool("Impact", false);
         animator.SetBool("isFalling", true);
         animator.SetBool("isJumping", false);
-        isFalling = true;
+        isDead = true;
     }
 
     private bool IsGrounded()
     {
         return Physics.Raycast(transform.position, -transform.up, 1.25f);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Grass"))
+            platformTag = "Grass";
+        else
+            platformTag = "Rock";
+
     }
 }

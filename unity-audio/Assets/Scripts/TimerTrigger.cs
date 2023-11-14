@@ -14,7 +14,7 @@ public class TimerTrigger : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (playerController.isFalling == true && other.name == "Player") {
+        if (playerController.isDead == true && other.name == "Player") {
             animator.SetBool("isFalling", false);
             animator.SetBool("Impact", true);
             StartCoroutine(CancelMovementAfterFall());
@@ -23,6 +23,6 @@ public class TimerTrigger : MonoBehaviour
 
     IEnumerator CancelMovementAfterFall() {
         yield return new WaitForSeconds(9f);
-        playerController.isFalling = false;
+        playerController.isDead = false;
     }
 }
