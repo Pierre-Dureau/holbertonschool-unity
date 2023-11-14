@@ -1229,14 +1229,6 @@ PrefabInstance:
       propertyPath: pauseCanvas
       value: 
       objectReference: {fileID: 477150329}
-    - target: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 564386214}
-    - target: {fileID: 882118425032736782, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
-      propertyPath: gameInput
-      value: 
-      objectReference: {fileID: 212785797}
     - target: {fileID: 942214983623483864, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.030227501
@@ -1481,10 +1473,6 @@ PrefabInstance:
       propertyPath: TimerText
       value: 
       objectReference: {fileID: 1840666492}
-    - target: {fileID: 2935130535386288902, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3163477506048375886, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03229192
@@ -1705,6 +1693,22 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.00024880187
       objectReference: {fileID: 0}
+    - target: {fileID: 3935164961507435125, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: landing_rock
+      value: 
+      objectReference: {fileID: 8300000, guid: 3cf11b569715cc14a8d513c91e68d963, type: 3}
+    - target: {fileID: 3935164961507435125, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: landing_grass
+      value: 
+      objectReference: {fileID: 8300000, guid: 0db8c2bda91e8e248bde6b0eda87d7c8, type: 3}
+    - target: {fileID: 3935164961507435125, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: audioSourceRun
+      value: 
+      objectReference: {fileID: 1528517669}
+    - target: {fileID: 3935164961507435125, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: audioSourceLand
+      value: 
+      objectReference: {fileID: 1528517672}
     - target: {fileID: 4077464511609816086, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.121802956
@@ -2452,6 +2456,16 @@ MonoBehaviour:
 --- !u!95 &1527850591 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2211117424091769420, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+  m_PrefabInstance: {fileID: 1527850587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1528517669 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82178605363760945, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+  m_PrefabInstance: {fileID: 1527850587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1528517672 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5437221223561848809, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
   m_PrefabInstance: {fileID: 1527850587}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1710572951
