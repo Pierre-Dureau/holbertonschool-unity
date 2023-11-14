@@ -8782,6 +8782,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6958269292430616024, guid: 2f279e4a526ee4e4c88f0a229d63e035, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1918140967848718245}
+    - target: {fileID: 6958269292430616024, guid: 2f279e4a526ee4e4c88f0a229d63e035, type: 3}
+      propertyPath: AnimName
+      value: Intro01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958269292430616024, guid: 2f279e4a526ee4e4c88f0a229d63e035, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 8583735611538820807}
@@ -8802,6 +8810,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f279e4a526ee4e4c88f0a229d63e035, type: 3}
+--- !u!95 &1918140967848718245 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2029735303691112666, guid: 2f279e4a526ee4e4c88f0a229d63e035, type: 3}
+  m_PrefabInstance: {fileID: 1918140967848718244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3451707630239491759
 PrefabInstance:
   m_ObjectHideFlags: 0
