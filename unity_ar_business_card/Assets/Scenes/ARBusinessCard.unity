@@ -380,7 +380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 477407260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097571049}
+        m_TargetAssemblyTypeName: ButtonIntercation, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: https://www.linkedin.com/in/pierre-dureau/
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &477407260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,7 +512,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 603569209}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097571049}
+        m_TargetAssemblyTypeName: ButtonIntercation, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: https://www.twitter.com
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &603569209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,7 +723,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1115339307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097571049}
+        m_TargetAssemblyTypeName: ButtonIntercation, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mailto:dureaupierre53@gmail.com
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1115339307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,7 +855,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1293647135}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2097571049}
+        m_TargetAssemblyTypeName: ButtonIntercation, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: https://github.com/Pierre-Dureau
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1293647135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,9 +1060,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378252945}
   m_CullTransparentMesh: 1
+--- !u!1 &2097571048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097571050}
+  - component: {fileID: 2097571049}
+  m_Layer: 0
+  m_Name: AppManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2097571049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097571048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0437c7171b7800640a1adcf9a17d42fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2097571050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097571048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 660.7678, y: 322.8788, z: 0.36064392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 27495247}
   - {fileID: 247757782}
+  - {fileID: 2097571050}
