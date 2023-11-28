@@ -9144,10 +9144,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3907690610193116158, guid: 5f1a3f17cd149834db85a7a8a0be820e, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -628583844000140629, guid: 98082f5249079ed40b080899d9609703, type: 2}
     - target: {fileID: 8051984391249058611, guid: 5f1a3f17cd149834db85a7a8a0be820e, type: 3}
       propertyPath: m_Name
       value: PauseSFX
       objectReference: {fileID: 0}
+    - target: {fileID: 9050438634122771259, guid: 5f1a3f17cd149834db85a7a8a0be820e, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -628583844000140629, guid: 98082f5249079ed40b080899d9609703, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9473,6 +9481,10 @@ PrefabInstance:
     - target: {fileID: 161224386918500044, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 590322386296482536, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
+      propertyPath: lastBGM
+      value: cheerymonday
       objectReference: {fileID: 0}
     - target: {fileID: 590322386296482536, guid: 0cfb39c86dbffb5429955bee6fda3ea6, type: 3}
       propertyPath: controller

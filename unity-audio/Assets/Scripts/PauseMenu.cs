@@ -11,6 +11,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private AudioMixerSnapshot pausedSnapshot;
     [SerializeField] private AudioMixerSnapshot unpausedSnapshot;
 
+    [SerializeField] private string lastBGM;
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -55,6 +57,7 @@ public class PauseMenu : MonoBehaviour
     public void Options()
     {
         Resume();
+        PlayerPrefs.SetString("lastBGM", lastBGM);
         PlayerPrefs.SetString("lastScene", SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("Options");
     }
