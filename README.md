@@ -6,7 +6,7 @@
 
 ## What is this repository for ?
 
-This repository gather all the projects in Unity during Holberton.
+This repository gather all the projects in Unity during Holberton. <br>
 It covers all the basics of this engine and it specializes in AR/VR.
 
 ## Projects
