@@ -1,5 +1,14 @@
 # holbertonschool-unity
 
+<p align="center">
+  <img src="https://www.perforce.com/sites/default/files/styles/social_preview_image/public/image/2021-01/image-blog-vcs-unity-virtual-production.jpg?itok=Gu2PIOS7">
+</p>
+
+## What is this repository for ?
+
+This repository gather all the projects in Unity during Holberton.
+It covers all the basics of this engine and it specializes in AR/VR.
+
 ## Projects
 
 ### [Unity - User Interface](./unity-user_interface/)
@@ -123,3 +132,7 @@
 - What is the difference between monoscopic and stereoscopic 360 video
 - What are render textures
 - How to use Unity’s Video Player component
+
+### [Unity - 2D Game](./MarioBros/)
+This project is optional! While the AR / VR track focuses on 3D projects,
+you can also develop 2D projects in Unity and many of the concepts in programming for 2D and 3D games are the same.
